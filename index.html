@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link  rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+<body>
+  <nav>
+    <ul>
+      
+      <li>
+        <a href="#">BRANCHES</a>
+        <ul class="sub-menu">
+          <li>
+            <a href="#">CME<sub>(Branchs)</sub></a>
+            <ul class="sub-menu">
+              <li><a href="{% url 'cmesemlist' %}">C20</a></li>
+              <li><a href="#">C23</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ECE<sub>(Branchs)</sub></a>
+            <ul class="sub-menu">
+              <li><a href="{%url 'ecesemlist' %}">C20</a></li>
+              <li><a href="#">C23</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">EEE<sub>(Branchs)</sub></a>
+            <ul class="sub-menu">
+              <li><a href="{% url 'eeesemlist' %}">C20</a></li>
+              <li><a href="#">C23</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MECH<sub>(Branchs)</sub></a>
+            <ul class="sub-menu">
+              <li><a href="{% url 'mechsemlist' %}">C20</a></li>
+              <li><a href="#">C23</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    
+      <!-- <li><a href="#">ABOUT US</a></li> -->
+      <!-- <li><a href="#">Menu 5</a></li> -->
+    </ul>
+  </nav>
+  <div class="background-container">
+    <h1>"DISCOVER YOUR NEXT ADVENTURE"</h1>
+    <h1 class="logo">TECHNICAL LIBIARY</h1>
+  </div>
+  <div class="head">
+    <h1>HEAD OF THE DEPARTMENT</h1>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <div class="image"></div>
+          <div class="plus">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="content">
+            <h2>name:--------------</h2>
+            <h2>education:------------</h2>
+            <p>exprence----------------------------<br></p>
+            <div class="button">
+              <a href="{% url 'cmeprofesers' %}"
+              > <button>know more</button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second">
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <div class="image"></div>
+            <div class="plus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content">
+              <h2>name:--------------</h2>
+              <h2>education:------------</h2>
+              <p>exprence----------------------------</p>
+              <div class="button">
+                <a href="{% url 'eceprofesers' %}"> <button>know more</button> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <div class="image"></div>
+          <div class="plus">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="content">
+            <h2>name:--------------</h2>
+            <h2>education:------------</h2>
+            <p>exprence----------------------------</p>
+            <div class="button">
+              <a href="{% url 'eeeprofesers' %}"> <button>know more</button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="front">
+          <div class="image"></div>
+          <div class="plus">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="content">
+            <h2>name:--------------</h2>
+            <h2>education:------------</h2>
+            <p>exprence----------------------------</p>
+            <div class="button">
+              <a href="{% url 'mechprofesers' %}"> <button>know more</button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="increse-size">
+    <a href="{% url 'cmesemlist' %}"><h1>CME BRANCH</h1> </a>
+  </div>
+  <div class="cme">
+    <div class="fade-in">
+      <a href="{% url 'cmesemlist' %}"> <img src="https://res.cloudinary.com/dagd5bttq/image/upload/media/cme_ws4od5.jpg" /> </a>
+    </div>
+    <p>
+      "Joining the computer engineering department is an invitation to embark
+      on a thrilling journey of discovery, innovation, and endless
+      possibilities. It's a chance to be at the forefront of technological
+      advancement, to shape the future with your own hands, and to leave your
+      mark on the ever-evolving world of computing."
+    </p>
+  </div>
+  <div class="increse-size">
+    <a href="{% url 'ecesemlist' %}"><h1>ECE BRANCH</h1> </a>
+  </div>
+  <div class="ece">
+    <p>
+      'The electronics and communication engineering department is not just
+      about circuits and signals; it's about shaping the future. It's about
+      creating technologies that connect us, inform us, and empower us. If
+      you're passionate about innovation, driven by a thirst for knowledge,
+      and excited to make a difference in the world, then the electronics and
+      communication engineering department might be the perfect place for
+      you."
+    </p>
+    <div class="fade-in">
+      <a href=" {% url 'ecesemlist' %}"><img src="https://res.cloudinary.com/dagd5bttq/image/upload/media/ece1.jpeg_xx6slj.jpg" /> </a>
+    </div>
+  </div>
+  <div class="increse-size">
+    <a href="{% url 'eeesemlist' %}"> <h1>EEE BRANCH</h1> </a>
+  </div>
+  <div class="eee">
+    <div class="fade-in">
+      <a href="{% url 'eeesemlist' %}"> <img src="https://res.cloudinary.com/dagd5bttq/image/upload/media/eee1_gbbyzf.jpg" /> </a>
+    </div>
+    <p>
+      " This is not just about wires and circuits; it's about shaping the
+      future. Our curriculum is a blend of theoretical rigor and practical
+      application, equipping students with the knowledge and skills to tackle
+      real-world challenges. Our labs are playgrounds for the mind, brimming
+      with cutting-edge equipment and software that allow students to
+      experiment, tinker, and bring their ideas to life. Our faculty are not
+      just teachers; they are mentors and guides, passionate about their
+      fields and dedicated to igniting the spark of innovation in every
+      student."
+    </p>
+  </div>
+  <div class="increse-size">
+    <a href="{% url 'mechsemlist' %}"> <h1>MECH BRANCH</h1> </a>
+  </div>
+  <div class="mech">
+    <p>
+      The beating heart of innovation, where metal dances and ideas take
+      flight. A mechanical engineering department is a hub of creativity and
+      ingenuity, where the principles of physics and mathematics are
+      transformed into tangible realities. It's a place where students become
+      makers, shaping raw materials into intricate machines that push the
+      boundaries of what's possible.
+    </p>
+    <div class="fade-in">
+      <a href="{% url 'mechsemlist' %}"> <img src="https://res.cloudinary.com/dagd5bttq/image/upload/media/meh.jpeg_kqp7c7.jpg" /> </a>
+    </div>
+  </div>
+  <footer>
+    <div class="about">
+      <ul>
+        <!-- <li class="quick">QUICK ACCES LINK</li> -->
+        <div class="quick">BRANCHES</div>
+        
+        <li><a href="{% url 'cmesemlist' %}">CME</a></li>
+        <li><a href="{% url 'ecesemlist' %}">ECE</a></li>
+        <li><a href="{% url 'eeesemlist' %}">EEE</a></li>
+        <li><a href="{% url 'mechsemlist' %}">MECH</a></li>
+       
+      </ul>
+      <ul>
+        <!-- <li>SUBJECT QUICK ACCESS</li> -->
+        <div class="quick">SUBJECTS</div>
+     
+        <li>
+          <a href="{% url 'cmeprofesers' %}">CME<sub>(SUBJECTS)</sub></a>
+        </li>
+        <li>
+          <a href="{% url 'eceprofesers' %}">ECE<sub>(SUBJECTS)</sub></a>
+        </li>
+        <li>
+          <a href="{% url 'eeeprofesers' %}">EEE<sub>(SUBJECTS)</sub></a>
+        </li>
+        <li>
+          <a href="{% url 'mechprofesers' %}">MECH<sub>(SUBJECTS)</sub></a>
+        </li>
+      </ul>
+      <div class="college">
+        <h6>
+          EXPLORE OUR COLLEGE GALARY
+          <div class="increse-size">
+            <a href="https://saiganapathipolytechnic.com/"
+              ><br />"INSTITUTION"</a
+            >
+          </div>
+        </h6>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
